@@ -24,3 +24,6 @@ myfetch('http://127.0.0.1:3000')
     }, function () {
         console.log('err');
     })
+
+
+console.log('test');
