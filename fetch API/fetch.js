@@ -19,11 +19,10 @@ function myfetch(url) {
 
 
 myfetch('http://127.0.0.1:3000')
-    .then(function (res) {
+    .then(res => {
         console.log(res);
-    }, function () {
+    })
+    .catch(err => {
         console.log('err');
     })
 
-
-console.log('test');
