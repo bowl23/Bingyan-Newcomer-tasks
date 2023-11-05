@@ -12,13 +12,14 @@
 
     <div id="main">
         <div class="plan">
-            <input required="" type="text" name="text" class="input">
+            <input v-model="todoname" required="" type="text" name="text" class="input" @keyup.enter="add">
             <label class="label">FOLLOW YOUR HEART</label>
-            <div id="addBtn"></div>
         </div>
         <div class="list">
             <ul>
-                <li v-for="item in list">{{item.id}}. {{item.thing}}</li>
+                <li v-for="(item,index) in list">{{index+1}}. {{item.thing}}
+                    <span id="del" @click="del(item.id)">X</span>
+                </li>
             </ul>
         </div>
     </div>
