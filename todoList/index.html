@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoList</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header><span id="title">DO WHAT YOU LOVE</span></header>
+
+    <div id="main">
+        <div class="plan">
+            <input required="" type="text" name="text" class="input">
+            <label class="label">FOLLOW YOUR HEART</label>
+            <div id="addBtn"></div>
+        </div>
+        <div class="list">
+            <ul>
+                <li v-for="item in list">{{item.id}}. {{item.thing}}</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./vue.js"></script>
+<script src="./index.js"></script>
+
+</html>

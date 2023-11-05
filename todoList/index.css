@@ -1,0 +1,122 @@
+/* 将内外间距初始化为0 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* 设置背景图片 */
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-image: url(./cool-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 头部标题 */
+header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #title {
+    font-size: 50px;
+    color: rgba(99, 128, 230);
+}
+
+
+/* 主体 */
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* 主体搜索框 */
+/* 容器 */
+.plan {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+}
+
+/* 默认文字 */
+.plan .label {
+    font-size: 15px;
+    padding-left: 20px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    transition: 0.3s;
+    pointer-events: none;
+    color: rgba(99, 128, 230, 1);
+    font-weight: 900;
+}
+
+/* 输入框 */
+.input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(99, 128, 230, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.input:focus {
+    border: 2px solid transparent;
+    color: #fff;
+}
+
+.plan .input:valid~.label,
+.plan .input:focus~.label {
+    transition: 0.3s;
+    padding-left: 2px;
+    transform: translateY(-35px);
+}
+
+
+/* 代办列表 */
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+ul {
+    width: 60%;
+
+}
+
+li {
+    list-style: none;
+    width: 100%;
+    height: 60px;
+    border-radius: 1px;
+    border-top: 1px rgb(121, 140, 233) solid;
+    background-color: rgb(202, 220, 254);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+li:first-child {
+    border-top: 0px;
+}
