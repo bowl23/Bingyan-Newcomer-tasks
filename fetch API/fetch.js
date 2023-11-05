@@ -23,10 +23,11 @@ const ressult = document.querySelector('.result');
 myfetch('http://127.0.0.1:3000')
     .then(res => {
         return res.text();
-    }, rej => {
-        console.log(rej);
     })
     .then(data => {
         ressult.innerHTML = data;
+    })
+    .catch(err => {
+        console.log(err);
     })
 
