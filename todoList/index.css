@@ -84,8 +84,8 @@ header #title {
     color: #fff;
 }
 
-.plan .input:valid~.label,
-.plan .input:focus~.label {
+.plan.input:valid~.label,
+.plan.input:focus~.label {
     transition: 0.3s;
     padding-left: 2px;
     transform: translateY(-35px);
@@ -100,12 +100,12 @@ header #title {
     padding: 10px;
 }
 
-ul {
+.list ul {
     width: 60%;
 
 }
 
-li {
+.list li {
     list-style: none;
     width: 100%;
     height: 60px;
@@ -118,11 +118,11 @@ li {
     position: relative;
 }
 
-li:first-child {
+.list li:first-child {
     border-top: 0px;
 }
 
-li #del{
+.list li #del {
     display: inline-block;
     color: rgb(104, 127, 229);
     position: absolute;

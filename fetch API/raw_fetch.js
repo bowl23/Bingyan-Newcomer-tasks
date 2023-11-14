@@ -559,9 +559,9 @@ export function fetch(input, init) {
       return reject(new DOMException('Aborted', 'AbortError'))
     }
 
-    var xhr = new XMLHttpRequest()//引入xhr对象
+    var xhr = new XMLHttpRequest() // 引入xhr对象
 
-    function abortXhr() {//定义一个终止请求的函数
+    function abortXhr() { // 定义一个终止请求的函数
       xhr.abort()
     }
 

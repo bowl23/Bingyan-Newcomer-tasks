@@ -1,6 +1,6 @@
 function myfetch(url) {
     let p = new Promise((res, rej) => {
-        var xhr = new XMLHttpRequest();
+        let xhr = new XMLHttpRequest();
         xhr.open('get', url, true);
         xhr.send();
         xhr.onreadystatechange = function () {
